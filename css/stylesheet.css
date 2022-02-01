@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: sans-serif, monospace;
 }
 
 section {
@@ -34,4 +34,14 @@ section {
 
 .four {
     background-color: #e56b6f;
+}
+
+span{
+    animation: blinker 1s linera infinite
+}
+
+@keyframes blinker{
+    50%{
+        opacity: 0;
+    }
 }
