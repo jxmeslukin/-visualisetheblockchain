@@ -10,8 +10,21 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .one {
-    background-color: #E27D60;
+    background-color: #355070;
+}
+
+.two {
+    background-color: #6d597a;
+}
+
+.three {
+    background-color: #b56576;
+}
+
+.four {
+    background-color: #e56b6f;
 }
