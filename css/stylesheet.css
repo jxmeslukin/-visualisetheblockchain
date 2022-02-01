@@ -37,7 +37,7 @@ section {
 }
 
 span{
-    animation: blinker 1s linera infinite
+    animation: blinker 1s linear infinite
 }
 
 @keyframes blinker{
