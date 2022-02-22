@@ -49,3 +49,8 @@ header{
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.responsiveText {
+    text-align: center;
+    width: 100%;
+}
