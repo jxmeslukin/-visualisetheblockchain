@@ -64,15 +64,10 @@ header{
     flex-direction: row;
     font-size: 50px;
     padding-top: 30px;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
-.content .responsiveText h2 {
-    font-size: 50px;
-    padding-top: 10%;
-    justify-content: center;
-    flex-direction: row;
-}
+
 
 section {
     height: 100vh;
