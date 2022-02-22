@@ -10,8 +10,9 @@ section{
     width: 100%;
     min-height: 100vh;
     padding: 100px 100px 0;
-    background: linear-gradient(to bottom, #d509a0,#ff606e);
 }
+
+
 
 section:before {
     content: '';
@@ -34,6 +35,14 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+
+.sectionOne {
+  background: linear-gradient(to bottom, #d509a0,#ff606e);
+}
+
+.sectionTwo{
+  background: linear-gradient(to bottom, #ff606e, #60d2ff);
 }
 
 .logo img {
