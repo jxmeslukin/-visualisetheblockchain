@@ -45,6 +45,10 @@ header{
   background: linear-gradient(to bottom, #ff606e, #60d2ff);
 }
 
+.sectionThree {
+  background: linear-gradient(to bottom, #60d2ff, #7860ff);
+}
+
 .logo img {
     max-width: 100px;
 }
