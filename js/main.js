@@ -66,12 +66,12 @@ console.clear();
 
 const can = document.querySelector(".splash");
 
-const randomX = random(1, 2);
-const randomY = random(3, 4);
+const randomX = random(1, 3);
+const randomY = random(3, 5);
 const randomDelay = random(0, 1);
-const randomTime = random(3, 5);
-const randomTime2 = random(5, 10);
-const randomAngle = random(0, 2);
+const randomTime = random(1, 3);
+const randomTime2 = random(4, 5);
+const randomAngle = random(0, 1);
 
 TweenLite.set(can, {
   x: randomX(-1),
