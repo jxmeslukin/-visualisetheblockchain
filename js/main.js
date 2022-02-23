@@ -57,6 +57,6 @@ tl.from(".splash", 1.8, {
     stagger: {
         amount: 0.2
     },
-    opacity: 1
+    opacity: 0
 });
 
