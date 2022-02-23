@@ -5,6 +5,9 @@ Author: James Lukin
 
 */
 
+
+// animating section text to fade in on scroll 
+
 gsap.registerPlugin(ScrollTrigger);
 // REVEAL //
 gsap.utils.toArray(".revealUp").forEach(function (elem) {
@@ -61,6 +64,7 @@ tl.from(".splash", 1.8, {
 });
 
 
+//animating splash page (first section) to fade in and float
 
 console.clear();
 
@@ -129,3 +133,18 @@ function random(min, max) {
   const delta = max - min;
   return (direction = 1) => (min + delta * Math.random()) * direction;
 }
+
+
+// animating second section img
+
+gsap.to(".left", {
+  scrollTrigger:{
+    trigger: ".left",
+    end: "bottom top", 
+    start: "top bottom", 
+    scrub: 1,
+    markers: false
+  },
+  x: -100,
+
+})

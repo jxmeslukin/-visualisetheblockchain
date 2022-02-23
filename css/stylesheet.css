@@ -170,8 +170,18 @@ html {
     align-items: center;
     flex-direction: column;
     font-size: 50px;
-    padding-top: 15px;
     flex-wrap: wrap;
+}
+
+.left {
+  margin-right: auto;
+  width: 30%;
+  margin-left: 10%;
+}
+
+.titleText {
+  vertical-align: top;
+  margin-top: 0px;
 }
 
 .revealUp {
