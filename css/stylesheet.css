@@ -183,3 +183,8 @@ html {
   position: relative;
   opacity: 1;
 }
+
+body {
+  overscroll-behavior-y: none;
+  overscroll-behavior-x: none;
+}
