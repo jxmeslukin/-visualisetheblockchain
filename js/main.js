@@ -65,6 +65,7 @@ tl.from(".splash", 1.8, {
 console.clear();
 
 const can = document.querySelector(".splash");
+const second = document.querySelector('.smaller')
 
 const randomX = random(1, 3);
 const randomY = random(3, 5);
@@ -79,9 +80,19 @@ TweenLite.set(can, {
   rotation: randomAngle(-1)
 });
 
+TweenLite.set(second, {
+  x: randomX(-1),
+  y: randomX(1),
+  rotation: randomAngle(-1)
+});
+
 moveX(can, 1);
 moveY(can, -1);
 rotate(can, 1);
+
+moveX(second, 5);
+moveY(second, -5);
+rotate(second, 5);
 
 function rotate(target, direction) {
   
