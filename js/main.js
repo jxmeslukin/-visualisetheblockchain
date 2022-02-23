@@ -88,11 +88,11 @@ TweenLite.set(second, {
 
 moveX(can, 1);
 moveY(can, -1);
-rotate(can, 1);
+rotate(can, 0);
 
 moveX(second, 5);
 moveY(second, -5);
-rotate(second, 5);
+rotate(second, 2);
 
 function rotate(target, direction) {
   
