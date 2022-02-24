@@ -137,14 +137,39 @@ function random(min, max) {
 
 // animating second section img
 
-gsap.to(".left", {
+gsap.to(".column", {
   scrollTrigger:{
-    trigger: ".left",
+    trigger: ".column",
     end: "bottom top", 
     start: "top bottom", 
-    scrub: 1,
+    scrub: 3,
     markers: false
   },
   x: -100,
+
+})
+
+
+gsap.to(".columnThree", {
+  scrollTrigger:{
+    trigger: ".columnThree",
+    end: "bottom top", 
+    start: "top bottom", 
+    scrub: 3,
+    markers: false
+  },
+  x: 100,
+
+})
+
+gsap.to(".columnTwo", {
+  scrollTrigger:{
+    trigger: ".columnTwo",
+    end: "bottom top", 
+    start: "top bottom", 
+    scrub: 3,
+    markers: false
+  },
+  y: 100,
 
 })

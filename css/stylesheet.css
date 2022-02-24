@@ -165,23 +165,57 @@ html {
 .responsiveSection { 
     position: relative;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     font-size: 50px;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    align-content: center;
 }
 
-.left {
-  margin-right: auto;
-  width: 30%;
-  margin-left: 10%;
+
+
+.title {
+  position: relative;
+  width: 100%;
+  font-size: 50px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.column {
+
+  flex: 40%;
+  padding-left: 10%;
+}
+
+.columnTwo {
+  padding-top: 3%;
+  flex: 20%;
+}
+
+.columnThree {
+  flex: 40%;
+  padding-right: 10%;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+p {
+  font-weight: lighter;
+  font-size: smaller;
 }
 
 .titleText {
   vertical-align: top;
   margin-top: 0px;
+  bottom: 99%;
 }
 
 .revealUp {
