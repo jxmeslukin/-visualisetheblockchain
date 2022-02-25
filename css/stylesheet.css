@@ -9,8 +9,14 @@ section{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 100px 100px 0;
 }
+
+.other h1 {
+  padding: 5% 5% 5%;
+  font-size: 150%;
+}
+
+
 
 
 
@@ -42,11 +48,11 @@ header{
 }
 
 .sectionTwo{
-  background: linear-gradient(to bottom, #ff606e, #eee01a);
+  background: linear-gradient(to bottom, #ff606e, #dde026);
 }
 
 .sectionThree {
-  background: linear-gradient(to bottom, #eee01a, #c2ff60);
+  background: linear-gradient(to bottom, #dde026, #c2ff60);
 }
 
 .sectionFour {
@@ -58,7 +64,7 @@ header{
 }
 
 .sectionSix {
-  background: linear-gradient(to bottom, #7860ff, #ec60ff);
+  background: linear-gradient(to bottom, #7860ff, #df60ff);
 }
 
 
@@ -92,6 +98,8 @@ header{
     font-size: 50px;
     padding-top: 30px;
     flex-wrap: wrap;
+    padding: 12% 12% 1%;
+    text-align: center;
 }
 
 .smaller {
