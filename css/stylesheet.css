@@ -42,12 +42,25 @@ header{
 }
 
 .sectionTwo{
-  background: linear-gradient(to bottom, #ff606e, #60d2ff);
+  background: linear-gradient(to bottom, #ff606e, #eee01a);
 }
 
 .sectionThree {
+  background: linear-gradient(to bottom, #eee01a, #c2ff60);
+}
+
+.sectionFour {
+  background: linear-gradient(to bottom, #c2ff60, #60d2ff);
+}
+
+.sectionFive {
   background: linear-gradient(to bottom, #60d2ff, #7860ff);
 }
+
+.sectionSix {
+  background: linear-gradient(to bottom, #7860ff, #ec60ff);
+}
+
 
 .logo img {
     max-width: 100px;
@@ -198,6 +211,16 @@ html {
 }
 
 .columnThree {
+  flex: 40%;
+  padding-right: 10%;
+}
+
+.thirdColumn {
+  flex: 40%;
+  padding-left: 10%;
+}
+
+.thirdColumnThree {
   flex: 40%;
   padding-right: 10%;
 }

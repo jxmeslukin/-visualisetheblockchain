@@ -173,3 +173,6 @@ gsap.to(".columnTwo", {
   y: 100,
 
 })
+
+
+
