@@ -1,14 +1,14 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-section{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .other h1 {
@@ -16,38 +16,34 @@ section{
   font-size: 150%;
 }
 
-
-
-
-
 section:before {
-    content: '';
-    position: absolute;
-    font-size: 20vw;
-    color: rgba(0,0,0,0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 900;
-    margin-top: 20vh;
+  content: '';
+  position: absolute;
+  font-size: 20vw;
+  color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  margin-top: 20vh;
 }
 
-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 40px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .sectionOne {
-  background: linear-gradient(to bottom, #d509a0,#ff606e);
+  background: linear-gradient(to bottom, #d509a0, #ff606e);
 }
 
-.sectionTwo{
+.sectionTwo {
   background: linear-gradient(to bottom, #ff606e, #dde026);
 }
 
@@ -69,37 +65,37 @@ header{
 
 
 .logo img {
-    max-width: 100px;
+  max-width: 100px;
 }
 
 .toggle {
-    width: 30px;
-    height: 30px;
-    background: url(/menu.png);
-    background-size: 30px;
-    cursor: pointer;
-    background-position: center;
-    background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background: url(/menu.png);
+  background-size: 30px;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .content {
-    position: relative;
-    width: 100%;
-    margin-top: 40px;
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
 }
 
 .content .responsiveText {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 50px;
-    padding-top: 30px;
-    flex-wrap: wrap;
-    padding: 12% 12% 1%;
-    text-align: center;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 50px;
+  padding-top: 30px;
+  flex-wrap: wrap;
+  padding: 12% 12% 1%;
+  text-align: center;
 }
 
 .smaller {
@@ -109,25 +105,26 @@ header{
 
 
 section {
-    height: 100vh;
-    width: 100vw;
-    scroll-snap-align: start;
-  }
-
-html {
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
 }
 
-@media (max-width: 767px){
-    header {
-        padding: 20px 40px;
-    }
-    section{
-        padding: 40px;
-        background: linear-gradient(to bottom, #d509a0, #ff606e);
-        overflow-x: hidden;
-    }
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 767px) {
+  header {
+    padding: 20px 40px;
+  }
+
+  section {
+    padding: 40px;
+    background: linear-gradient(to bottom, #d509a0, #ff606e);
+    overflow-x: hidden;
+  }
 }
 
 .arrow,
@@ -135,6 +132,7 @@ html {
   position: absolute;
   left: 50%;
 }
+
 .arrow {
   width: 40px;
   height: 40px;
@@ -147,7 +145,7 @@ html {
   border-right: 2px rgb(2, 2, 2) solid;
   border-bottom: 2px rgb(0, 0, 0) solid;
 }
-  
+
 .arrow:before {
   content: '';
   width: 20px;
@@ -161,12 +159,13 @@ html {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-name: arrow;
-}  
+}
 
 @keyframes arrow {
   0% {
     opacity: 1;
-    }
+  }
+
   100% {
     opacity: 0;
     transform: translate(-10px, -10px);
@@ -174,26 +173,32 @@ html {
 }
 
 .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
-.responsiveSection { 
-    position: relative;
-    width: 100%;
-    font-size: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-    text-align: center;
-    align-content: center;
+.responsiveSection {
+  position: relative;
+  width: 100%;
+  font-size: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  text-align: center;
+  align-content: center;
 }
 
 

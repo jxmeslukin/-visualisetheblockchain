@@ -18,9 +18,10 @@ gsap.utils.toArray(".revealUp").forEach(function (elem) {
     markers: false,
     onEnter: function () {
       gsap.fromTo(
-        elem,
-        { y: 100, autoAlpha: 0 },
-        {
+        elem, {
+          y: 100,
+          autoAlpha: 0
+        }, {
           duration: 1.25,
           y: 0,
           autoAlpha: 1,
@@ -30,13 +31,19 @@ gsap.utils.toArray(".revealUp").forEach(function (elem) {
       );
     },
     onLeave: function () {
-      gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+      gsap.fromTo(elem, {
+        autoAlpha: 1
+      }, {
+        autoAlpha: 0,
+        overwrite: "auto"
+      });
     },
     onEnterBack: function () {
       gsap.fromTo(
-        elem,
-        { y: -100, autoAlpha: 0 },
-        {
+        elem, {
+          y: -100,
+          autoAlpha: 0
+        }, {
           duration: 1.25,
           y: 0,
           autoAlpha: 1,
@@ -46,21 +53,26 @@ gsap.utils.toArray(".revealUp").forEach(function (elem) {
       );
     },
     onLeaveBack: function () {
-      gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+      gsap.fromTo(elem, {
+        autoAlpha: 1
+      }, {
+        autoAlpha: 0,
+        overwrite: "auto"
+      });
     }
   });
 });
 
 var tl = gsap.timeline();
 tl.from(".splash", 1.8, {
-    y: 100,
-    ease: 'power4.out',
-    delay: 0,
-    skewY: 0,
-    stagger: {
-        amount: 0.2
-    },
-    opacity: 0
+  y: 100,
+  ease: 'power4.out',
+  delay: 0,
+  skewY: 0,
+  stagger: {
+    amount: 0.2
+  },
+  opacity: 0
 });
 
 
@@ -99,7 +111,7 @@ moveY(second, -5);
 rotate(second, 2);
 
 function rotate(target, direction) {
-  
+
   TweenLite.to(target, randomTime2(), {
     rotation: randomAngle(direction),
     // delay: randomDelay(),
@@ -110,7 +122,7 @@ function rotate(target, direction) {
 }
 
 function moveX(target, direction) {
-  
+
   TweenLite.to(target, randomTime(), {
     x: randomX(direction),
     ease: Sine.easeInOut,
@@ -120,7 +132,7 @@ function moveX(target, direction) {
 }
 
 function moveY(target, direction) {
-  
+
   TweenLite.to(target, randomTime(), {
     y: randomY(direction),
     ease: Sine.easeInOut,
@@ -138,10 +150,10 @@ function random(min, max) {
 // animating second section img
 
 gsap.to(".column", {
-  scrollTrigger:{
+  scrollTrigger: {
     trigger: ".column",
-    end: "bottom top", 
-    start: "top bottom", 
+    end: "bottom top",
+    start: "top bottom",
     scrub: 3,
     markers: false
   },
@@ -151,10 +163,10 @@ gsap.to(".column", {
 
 
 gsap.to(".columnThree", {
-  scrollTrigger:{
+  scrollTrigger: {
     trigger: ".columnThree",
-    end: "bottom top", 
-    start: "top bottom", 
+    end: "bottom top",
+    start: "top bottom",
     scrub: 3,
     markers: false
   },
@@ -163,16 +175,13 @@ gsap.to(".columnThree", {
 })
 
 gsap.to(".columnTwo", {
-  scrollTrigger:{
+  scrollTrigger: {
     trigger: ".columnTwo",
-    end: "bottom top", 
-    start: "top bottom", 
+    end: "bottom top",
+    start: "top bottom",
     scrub: 3,
     markers: false
   },
   y: 100,
 
 })
-
-
-
