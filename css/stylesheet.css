@@ -39,6 +39,15 @@ header {
   width: 100%;
 }
 
+body {
+  overscroll-behavior-y: none;
+  overscroll-behavior-x: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .sectionOne {
   background: linear-gradient(to bottom, #d509a0, #ff606e);
 }
@@ -206,25 +215,23 @@ html {
 .title {
   position: relative;
   width: 100%;
-  font-size: 50px;
-  justify-content: center;
-  align-content: center;
+  font-size: 45px;
   text-align: center;
+
 }
 
 .column {
-
-  flex: 40%;
+  flex: 45%;
   padding-left: 10%;
 }
 
 .columnTwo {
-  padding-top: 3%;
-  flex: 20%;
+  padding-top: 0%;
+  flex: 5%;
 }
 
 .columnThree {
-  flex: 40%;
+  flex: 45%;
   padding-right: 10%;
 }
 
@@ -251,7 +258,6 @@ p {
 .titleText {
   vertical-align: top;
   margin-top: 0px;
-  bottom: 99%;
 }
 
 .revealUp {
@@ -264,7 +270,3 @@ p {
   opacity: 1;
 }
 
-body {
-  overscroll-behavior-y: none;
-  overscroll-behavior-x: none;
-}

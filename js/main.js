@@ -78,7 +78,6 @@ tl.from(".splash", 1.8, {
 
 //animating splash page (first section) to fade in and float
 
-console.clear();
 
 const can = document.querySelector(".splash");
 const second = document.querySelector('.smaller')
@@ -161,6 +160,17 @@ gsap.to(".column", {
 
 })
 
+gsap.to(".columnTwo", {
+  scrollTrigger: {
+    trigger: ".columnTwo",
+    end: "bottom top",
+    start: "top bottom",
+    scrub: 3,
+    markers: false
+  },
+  y: 100,
+
+})
 
 gsap.to(".columnThree", {
   scrollTrigger: {
@@ -174,14 +184,73 @@ gsap.to(".columnThree", {
 
 })
 
-gsap.to(".columnTwo", {
-  scrollTrigger: {
-    trigger: ".columnTwo",
-    end: "bottom top",
-    start: "top bottom",
-    scrub: 3,
-    markers: false
-  },
-  y: 100,
 
-})
+
+// consistent floating
+
+// const floatTitle = document.querySelector(".title");
+// const floatSec = document.querySelector('.smaller')
+
+// const ranX = random(1, 3);
+// const ranY = random(3, 5);
+// const ranDel = random(0, 1);
+// const ranTime = random(1, 3);
+// const ranTimeTwo = random(4, 5);
+// const ranAng = random(0, 1);
+
+// TweenLite.set(floatTitle, {
+//   x: ranX(-1),
+//   y: ranY(1),
+//   rotation: ranAng(-1)
+// });
+
+// TweenLite.set(floatSec, {
+//   x: ranX(-1),
+//   y: ranY(1),
+//   rotation: ranAng(-1)
+// });
+
+// moveX(floatTitle, 1);
+// moveY(floatTitle, -1);
+// rotate(floatTitle, 0);
+
+// moveX(floatSec, 5);
+// moveY(floatSec, -5);
+// rotate(floatSec, 2);
+
+// function rotate(target, direction) {
+
+//   TweenLite.to(target, randomTime2(), {
+//     rotation: randomAngle(direction),
+//     // delay: randomDelay(),
+//     ease: Sine.easeInOut,
+//     onComplete: rotate,
+//     onCompleteParams: [target, direction * -1]
+//   });
+// }
+
+// function moveX(target, direction) {
+
+//   TweenLite.to(target, randomTime(), {
+//     x: randomX(direction),
+//     ease: Sine.easeInOut,
+//     onComplete: moveX,
+//     onCompleteParams: [target, direction * -1]
+//   });
+// }
+
+// function moveY(target, direction) {
+
+//   TweenLite.to(target, randomTime(), {
+//     y: randomY(direction),
+//     ease: Sine.easeInOut,
+//     onComplete: moveY,
+//     onCompleteParams: [target, direction * -1]
+//   });
+// }
+
+// function random(min, max) {
+//   const delta = max - min;
+//   return (direction = 1) => (min + delta * Math.random()) * direction;
+// }
+
