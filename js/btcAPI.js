@@ -1,60 +1,25 @@
-var blockList = []
 
-const init = async () => {
+/* Example in Node.js */
+const axios = require('axios');
 
-  console.log("test")
-  const { bitcoin: { blocks } } = mempoolJS({
-    hostname: 'mempool.space'
-  });
-
-  const getBlocks = await blocks.getBlocks({ start_height: 698777 });
-
-  var newBlocks = JSON.stringify(getBlocks, undefined, 2);
-
-  console.log(newBlocks)
-
-  blockList.push(newBlocks);
-  var cleanedList = $.unique(blockList)
-  console.log(cleanedList);
-
-
-
-  
-
-
-}
-
-init();
-
-function httpGet()
-{
-
-  fetch("https://blockchain.info/latestblock")
-    .then((response) => {
-      return response.json();
-    })
-
-}
-
-httpGet();
-
-const url = 'https://blockchain.info/latestblock';
-
-let data = {
-  hash
-}
-
-let request = new Request(url, {
-  method: 'POST',
-  body: JSON.stringify(data),
-  headers: new Headers({
-    'Content-Type': 'application/json; charset=UTF-8'
-  })
+let response = null;
+new Promise(async (resolve, reject) => {
+  try {
+    response = await axios.get('https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest', {
+      headers: {
+        'X-CMC_PRO_API_KEY': '0099e63a-af05-486e-8c81-541b1e27b74e',
+      },
+    });
+  } catch(ex) {
+    response = null;
+    // error
+    console.log(ex);
+    reject(ex);
+  }
+  if (response) {
+    // success
+    const json = response.data;
+    console.log(json);
+    resolve(json);
+  }
 });
-
-fetch(request)
-  .then(function() {
-    // Handle response you get from the API
-  });
-
-
