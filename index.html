@@ -12,11 +12,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://mempool.space/mempool.js"></script>
+    <script src="https://kit.fontawesome.com/40b81531b5.js" crossorigin="anonymous"></script>
     <script src="/js/btcAPI.js"></script>
 </head>
 
 <body>
+    
     <div class="container noselect">
+        <button class="dl__btn click" onclick="toggleModal()">
+            <i class="fa-solid fa-download"></i>
+          </button>
         <section class="child sectionOne">
             <header>
                 <a href="#" class="logo"><img src="./img/logo.png"> </a>
@@ -114,12 +119,21 @@
             <section class="sectionSix">
                 <a id="pgThree"></a>
                 <div>
-                    
+                    <div class="title">
+                        <h1 class="revealUp titleText">Downloadable Explorer</h1>
+                    </div>
                 </div>
             </section>
 
 
         </section>
+        <div class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+              <!-- Any other Bulma elements you want -->
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+          </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
