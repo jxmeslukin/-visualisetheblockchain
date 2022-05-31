@@ -19,7 +19,7 @@
 <body>
     
     <div class="container noselect">
-        <button class="dl__btn click" onclick="toggleModal()">
+        <button class="dl__btn click js-modal-trigger" data-target="modal-js">
             <i class="fa-solid fa-download"></i>
           </button>
         <section class="child sectionOne">
@@ -122,19 +122,31 @@
                     <div class="title">
                         <h1 class="revealUp titleText">Downloadable Explorer</h1>
                     </div>
+                    <div class="responsiveSection revealUp">
+                        <div class="column">
+                            <p>For a real-time example of blockchain technology in action, please click the button in the <b>bottom right corner</b>, or the logo in the top left at the top of the website. </p>
+                        </div>
+
+                    </div>
                 </div>
             </section>
 
 
         </section>
-        <div class="modal">
-            <div class="modal-background"></div>
-            <div class="modal-content">
-              <!-- Any other Bulma elements you want -->
-            </div>
-            <button class="modal-close is-large" aria-label="close"></button>
+        
+    <!-- </div>
+    <div id="modal-js" class="modal">
+        <div class="modal-background"></div>
+      
+        <div class="modal-content">
+          <div class="box">
+            <p>Modal JS example</p>
+           
           </div>
-    </div>
+        </div>
+      
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
