@@ -306,15 +306,5 @@ document.addEventListener('DOMContentLoaded', () => {
 function download() {
   let userAgent = navigator.userAgent
   console.log(userAgent)
-  if(userAgent.includes('Macintosh')) {
-    console.log('mac')
-    window.location = '../downloadables/vtbExplorer.dmg'
-  }
-  if(userAgent.includes('Windows')) {
-    console.log('win')
-    window.location = '../downloadables/vtbexplorerbuild.exe'
-  }
-  if(userAgent.includes('Linux')) {
-
-  } 
+  window.location("https://github.com/jxmeslukin/vtb-Explorer/releases/tag/v0.2")
 }
