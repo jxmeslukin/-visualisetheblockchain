@@ -86,6 +86,13 @@ a {
   background: linear-gradient(to bottom, #ffbf60, #c4f164);
 }
 
+.sectionTen {
+  background: linear-gradient(to bottom, #c4f164, #60ffc2);
+}
+
+.sectionEleven {
+  background: linear-gradient(to bottom, #60ffc2, #60c2ff);
+}
 
 .logo img {
   max-width: 100px;
