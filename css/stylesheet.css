@@ -42,6 +42,8 @@ header {
 body {
   overscroll-behavior-y: none;
   overscroll-behavior-x: none;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -78,6 +80,10 @@ a {
 
 .sectionEight {
   background: linear-gradient(to bottom, #ff6078, #ffbf60);
+}
+
+.sectionNine {
+  background: linear-gradient(to bottom, #ffbf60, #c4f164);
 }
 
 
