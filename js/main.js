@@ -306,5 +306,5 @@ document.addEventListener('DOMContentLoaded', () => {
 function download() {
   let userAgent = navigator.userAgent;
   console.log(userAgent);
-  window.open("https://github.com/jxmeslukin/vtb-Explorer/releases/tag/v0.2", '_blank');
+  window.open("https://github.com/jxmeslukin/vtb-Explorer/releases/tag/v1.0", '_blank');
 }
